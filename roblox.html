@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox - GameMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Game<span>Market</span></a>
+            <div class="nav-search">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" id="globalSearch" placeholder="Search products...">
+            </div>
+            <button class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#games">Games</a></li>
+                <li><a href="roblox.html">Accounts</a></li>
+                <li><a href="minecraft.html">Currency</a></li>
+                <li><a href="valorant.html">Items</a></li>
+                <li><a href="fortnite.html">Boosting</a></li>
+                <li><a href="discord.html">Gift Cards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        <h1>Roblox</h1>
+        <p>Accounts, Robux, Limiteds, Gamepasses & more</p>
+    </div>
+
+    <section class="section">
+        <div data-category-container>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="accounts">Accounts</button>
+                <button class="category-tab" data-category="currency">Currency</button>
+                <button class="category-tab" data-category="items">Items</button>
+                <button class="category-tab" data-category="boosting">Boosting</button>
+                <button class="category-tab" data-category="giftcards">Gift Cards</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <script id="productData" data-container="productsGrid" type="application/json">[
+        { "title": "Blox Fruits Account", "description": "Max level, full fruit inventory", "price": 24.99, "image": "images/placeholder.svg", "category": "accounts" },
+        { "title": "Robux 1,000", "description": "Instant delivery Robux", "price": 9.99, "image": "images/placeholder.svg", "category": "currency" },
+        { "title": "Limited Dominus", "description": "Rare limited hat item", "price": 149.99, "image": "images/placeholder.svg", "category": "items" },
+        { "title": "Gamepass Bundle", "description": "5 premium gamepasses", "price": 19.99, "image": "images/placeholder.svg", "category": "items" },
+        { "title": "Pet Simulator Pets", "description": "Huge pets bundle", "price": 34.99, "image": "images/placeholder.svg", "category": "items" },
+        { "title": "Leveling Service", "description": "Fast leveling to max", "price": 14.99, "image": "images/placeholder.svg", "category": "boosting" },
+        { "title": "Bloxfruit Account", "description": "Starter account with perm fruits", "price": 29.99, "image": "images/placeholder.svg", "category": "accounts" },
+        { "title": "Roblox Gift Card $25", "description": "Digital code sent instantly", "price": 25.00, "image": "images/placeholder.svg", "category": "giftcards" }
+    ]</script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

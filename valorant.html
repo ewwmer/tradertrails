@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - GameMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Game<span>Market</span></a>
+            <div class="nav-search">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" id="globalSearch" placeholder="Search products...">
+            </div>
+            <button class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#games">Games</a></li>
+                <li><a href="roblox.html">Accounts</a></li>
+                <li><a href="minecraft.html">Currency</a></li>
+                <li><a href="valorant.html">Items</a></li>
+                <li><a href="fortnite.html">Boosting</a></li>
+                <li><a href="discord.html">Gift Cards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        <h1>Valorant</h1>
+        <p>Accounts, VP, Skins, Boosting & more</p>
+    </div>
+
+    <section class="section">
+        <div data-category-container>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="accounts">Accounts</button>
+                <button class="category-tab" data-category="currency">Currency</button>
+                <button class="category-tab" data-category="items">Items</button>
+                <button class="category-tab" data-category="boosting">Boosting</button>
+                <button class="category-tab" data-category="giftcards">Gift Cards</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <script id="productData" data-container="productsGrid" type="application/json">[
+        { "title": "Platinum Account", "description": "Platinum rank with skins", "price": 44.99, "image": "images/placeholder.svg", "category": "accounts" },
+        { "title": "Valorant Points 2,000", "description": "VP for skins and battle pass", "price": 19.99, "image": "images/placeholder.svg", "category": "currency" },
+        { "title": "Reaver Skin Bundle", "description": "Full Reaver collection", "price": 59.99, "image": "images/placeholder.svg", "category": "items" },
+        { "title": "Radiant Boosting", "description": "Radiant rank boost service", "price": 149.99, "image": "images/placeholder.svg", "category": "boosting" },
+        { "title": "Prime Classic", "description": "Prime Classic knife skin", "price": 24.99, "image": "images/placeholder.svg", "category": "items" },
+        { "title": "Valorant Gift Card $50", "description": "Digital VP voucher", "price": 50.00, "image": "images/placeholder.svg", "category": "giftcards" },
+        { "title": "Diamond Account", "description": "Diamond 3, limited skins", "price": 69.99, "image": "images/placeholder.svg", "category": "accounts" },
+        { "title": "Battle Pass Completion", "description": "Full battle pass unlock", "price": 29.99, "image": "images/placeholder.svg", "category": "boosting" }
+    ]</script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

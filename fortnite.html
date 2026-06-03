@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite - GameMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Game<span>Market</span></a>
+            <div class="nav-search">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" id="globalSearch" placeholder="Search products...">
+            </div>
+            <button class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#games">Games</a></li>
+                <li><a href="roblox.html">Accounts</a></li>
+                <li><a href="minecraft.html">Currency</a></li>
+                <li><a href="valorant.html">Items</a></li>
+                <li><a href="fortnite.html">Boosting</a></li>
+                <li><a href="discord.html">Gift Cards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        <h1>Fortnite</h1>
+        <p>Accounts, V-Bucks, Skins, Boosting & more</p>
+    </div>
+
+    <section class="section">
+        <div data-category-container>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="accounts">Accounts</button>
+                <button class="category-tab" data-category="currency">Currency</button>
+                <button class="category-tab" data-category="items">Items</button>
+                <button class="category-tab" data-category="boosting">Boosting</button>
+                <button class="category-tab" data-category="giftcards">Gift Cards</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <script id="productData" data-container="productsGrid" type="application/json">[
+        { "title": "Rare Skin Account", "description": "Renegade Raider, Galaxy, more", "price": 199.99, "image": "images/placeholder.svg", "category": "accounts" },
+        { "title": "V-Bucks 5,000", "description": "In-game currency bundle", "price": 39.99, "image": "images/placeholder.svg", "category": "currency" },
+        { "title": "Legendary Skin Pack", "description": "5 legendary skins", "price": 44.99, "image": "images/placeholder.svg", "category": "items" },
+        { "title": "Arena Points Boost", "description": "Reach Champion League", "price": 79.99, "image": "images/placeholder.svg", "category": "boosting" },
+        { "title": "Full Battle Pass", "description": "Complete tier 100 unlock", "price": 34.99, "image": "images/placeholder.svg", "category": "boosting" },
+        { "title": "Fortnite Gift Card $25", "description": "V-Bucks digital code", "price": 25.00, "image": "images/placeholder.svg", "category": "giftcards" },
+        { "title": "Midnight Skin Account", "description": "Chapter 1 OG skins account", "price": 129.99, "image": "images/placeholder.svg", "category": "accounts" },
+        { "title": "V-Bucks 13,500", "description": "Largest V-Bucks pack", "price": 99.99, "image": "images/placeholder.svg", "category": "currency" }
+    ]</script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

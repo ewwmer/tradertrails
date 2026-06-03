@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord - GameMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Game<span>Market</span></a>
+            <div class="nav-search">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" id="globalSearch" placeholder="Search products...">
+            </div>
+            <button class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#games">Games</a></li>
+                <li><a href="roblox.html">Accounts</a></li>
+                <li><a href="minecraft.html">Currency</a></li>
+                <li><a href="valorant.html">Items</a></li>
+                <li><a href="fortnite.html">Boosting</a></li>
+                <li><a href="discord.html">Gift Cards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        <h1>Discord</h1>
+        <p>Nitro, Gift Cards, Boosts & more</p>
+    </div>
+
+    <section class="section">
+        <div data-category-container>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="giftcards">Gift Cards</button>
+                <button class="category-tab" data-category="items">Items</button>
+                <button class="category-tab" data-category="boosting">Boosting</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <script id="productData" data-container="productsGrid" type="application/json">[
+        { "title": "Nitro Classic", "description": "1 month Discord Nitro Classic", "price": 4.99, "image": "images/placeholder.svg", "category": "giftcards" },
+        { "title": "Nitro Full", "description": "1 month Discord Nitro full", "price": 9.99, "image": "images/placeholder.svg", "category": "giftcards" },
+        { "title": "Nitro Yearly", "description": "12 months Discord Nitro", "price": 99.99, "image": "images/placeholder.svg", "category": "giftcards" },
+        { "title": "Server Boost (1)", "description": "1 server boost", "price": 3.99, "image": "images/placeholder.svg", "category": "boosting" },
+        { "title": "Server Boost (3)", "description": "3 server boosts", "price": 10.99, "image": "images/placeholder.svg", "category": "boosting" },
+        { "title": "Custom Emotes Pack", "description": "Premium animated emotes", "price": 7.99, "image": "images/placeholder.svg", "category": "items" },
+        { "title": "Nitro Classic Yearly", "description": "12 months Nitro Classic", "price": 49.99, "image": "images/placeholder.svg", "category": "giftcards" },
+        { "title": "Server Boost (5)", "description": "5 server boosts", "price": 16.99, "image": "images/placeholder.svg", "category": "boosting" }
+    ]</script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

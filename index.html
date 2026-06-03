@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMarket - Premium Gaming Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Game<span>Market</span></a>
+            <div class="nav-search">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" id="globalSearch" placeholder="Search games, products...">
+            </div>
+            <button class="nav-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="roblox.html">Accounts</a></li>
+                <li><a href="minecraft.html">Currency</a></li>
+                <li><a href="valorant.html">Items</a></li>
+                <li><a href="fortnite.html">Boosting</a></li>
+                <li><a href="discord.html">Gift Cards</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.svg" alt="" onerror="this.style.display='none'">
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content fade-in">
+            <h1 id="heroTitle">Premium Gaming Marketplace</h1>
+            <p id="heroDesc">Buy and sell accounts, currency, items, boosting services, and gift cards for your favorite games.</p>
+            <a href="#games" class="btn btn-primary">Browse Games</a>
+        </div>
+    </section>
+
+    <!-- FEATURED GAMES -->
+    <section id="games" class="section featured-section">
+        <div class="section-header fade-in">
+            <h2>Featured Games</h2>
+            <p>Choose a game to explore available products</p>
+        </div>
+        <div class="games-grid">
+            <a href="roblox.html" class="game-card fade-in">
+                <img src="images/roblox.svg" alt="Roblox" class="card-image" onerror="this.style.display='none'">
+                <div class="card-body">
+                    <h3>Roblox</h3>
+                    <p>Accounts, Robux, Limiteds & more</p>
+                </div>
+            </a>
+            <a href="minecraft.html" class="game-card fade-in">
+                <img src="images/minecraft.svg" alt="Minecraft" class="card-image" onerror="this.style.display='none'">
+                <div class="card-body">
+                    <h3>Minecraft</h3>
+                    <p>Accounts, Minecoins, Items & more</p>
+                </div>
+            </a>
+            <a href="valorant.html" class="game-card fade-in">
+                <img src="images/valorant.svg" alt="Valorant" class="card-image" onerror="this.style.display='none'">
+                <div class="card-body">
+                    <h3>Valorant</h3>
+                    <p>Accounts, VP, Skins & more</p>
+                </div>
+            </a>
+            <a href="fortnite.html" class="game-card fade-in">
+                <img src="images/fortnite.svg" alt="Fortnite" class="card-image" onerror="this.style.display='none'">
+                <div class="card-body">
+                    <h3>Fortnite</h3>
+                    <p>Accounts, V-Bucks, Skins & more</p>
+                </div>
+            </a>
+            <a href="discord.html" class="game-card fade-in">
+                <img src="images/discord.svg" alt="Discord" class="card-image" onerror="this.style.display='none'">
+                <div class="card-body">
+                    <h3>Discord</h3>
+                    <p>Nitro, Gift Cards & more</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
