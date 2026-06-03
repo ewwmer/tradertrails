@@ -1,6 +1,6 @@
 // ===== CONFIGURATION =====
 const CONFIG = {
-    discordLink: 'https://discord.gg/YOURSERVER',
+    discordLink: 'https://discord.gg/zS6MZzcRdp',
     siteName: 'GameMarket',
 };
 
